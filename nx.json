@@ -1,26 +1,32 @@
 {
-  "npmScope": "nx-boilerplate",
-  "affected": {
-    "defaultBase": "master"
-  },
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
-    ".eslintrc.json": "*"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
-    }
-  },
-  "projects": {
-    "backend": {
-      "tags": []
-    }
-  }
+	"npmScope": "nx-boilerplate",
+	"affected": {
+		"defaultBase": "master"
+	},
+	"implicitDependencies": {
+		"package.json": {
+			"dependencies": "*",
+			"devDependencies": "*"
+		},
+		".eslintrc.json": "*"
+	},
+	"tasksRunnerOptions": {
+		"default": {
+			"runner": "@nrwl/nx-cloud",
+			"options": {
+				"cacheableOperations": ["build", "lint", "test", "e2e"],
+				"accessToken": "OWViODYyNTgtZWRiMC00ZDU4LWEzMjAtOTZjMzQwYTdjYmRkfHJlYWQtd3JpdGU=",
+				"canTrackAnalytics": false,
+				"showUsageWarnings": true
+			}
+		}
+	},
+	"projects": {
+		"backend": {
+			"tags": []
+		},
+		"utils": {
+			"tags": []
+		}
+	}
 }
